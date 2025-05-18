@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İmposter Oyunu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>İmposter Kim?</h1>
+    <div id="game">
+      <button onclick="startGame(4)">4 Kişi</button>
+      <button onclick="startGame(5)">5 Kişi</button>
+      <button onclick="startGame(6)">6 Kişi</button>
+      <div id="result"></div>
+      <button id="nextBtn" style="display:none" onclick="nextPlayer()">Sıradaki Oyuncu</button>
+      <button id="revealBtn" style="display:none" onclick="reveal()">Göster</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
